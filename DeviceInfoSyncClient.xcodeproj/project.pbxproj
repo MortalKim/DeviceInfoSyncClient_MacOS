@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */; };
-		3B3FCB4628BB19DC00C258F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4528BB19DC00C258F8 /* ContentView.swift */; };
+		3B3FCB4628BB19DC00C258F8 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4528BB19DC00C258F8 /* SideBarView.swift */; };
 		3B3FCB4828BB19DD00C258F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */; };
 		3B3FCB4B28BB19DD00C258F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4A28BB19DD00C258F8 /* Preview Assets.xcassets */; };
 		3B3FCB5628BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB5528BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift */; };
@@ -16,6 +16,11 @@
 		3B3FCB6228BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */; };
 		3B3FCB7228BB2BDD00C258F8 /* UdpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB7128BB2BDD00C258F8 /* UdpTool.swift */; };
 		3B3FCB7428BB32F500C258F8 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3FCB7328BB32F500C258F8 /* Network.framework */; };
+		3B803B6628BBB8EF00082BDC /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6528BBB8EF00082BDC /* SettingsWindowController.swift */; };
+		3B803B6828BBB98300082BDC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6728BBB98300082BDC /* SettingsViewController.swift */; };
+		3B803B6B28BBBA0900082BDC /* AKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6A28BBBA0900082BDC /* AKExtension.swift */; };
+		3BC0856F28BB795E00E00283 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BAD373428BB78890095525B /* Info.plist */; };
+		3BC0857528BB997C00E00283 /* GenericSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0857428BB997C00E00283 /* GenericSettings.swift */; };
 		7344A146C4EA342768801193 /* Pods_DeviceInfoSyncClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +44,7 @@
 /* Begin PBXFileReference section */
 		3B3FCB4028BB19DC00C258F8 /* DeviceInfoSyncClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInfoSyncClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientApp.swift; sourceTree = "<group>"; };
-		3B3FCB4528BB19DC00C258F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B3FCB4528BB19DC00C258F8 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B3FCB4A28BB19DD00C258F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B3FCB4C28BB19DD00C258F8 /* DeviceInfoSyncClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceInfoSyncClient.entitlements; sourceTree = "<group>"; };
@@ -50,6 +55,11 @@
 		3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3B3FCB7128BB2BDD00C258F8 /* UdpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpTool.swift; sourceTree = "<group>"; };
 		3B3FCB7328BB32F500C258F8 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/PrivateFrameworks/Network.framework; sourceTree = SDKROOT; };
+		3B803B6528BBB8EF00082BDC /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		3B803B6728BBB98300082BDC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3B803B6A28BBBA0900082BDC /* AKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKExtension.swift; sourceTree = "<group>"; };
+		3BAD373428BB78890095525B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC0857428BB997C00E00283 /* GenericSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSettings.swift; sourceTree = "<group>"; };
 		A0F6599C948BA8A5059E845B /* Pods-DeviceInfoSyncClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfoSyncClient.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A9D306A37742970ED6B53 /* Pods-DeviceInfoSyncClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfoSyncClient.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient.release.xcconfig"; sourceTree = "<group>"; };
 		FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfoSyncClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,12 +117,15 @@
 		3B3FCB4228BB19DC00C258F8 /* DeviceInfoSyncClient */ = {
 			isa = PBXGroup;
 			children = (
+				3B803B6928BBB9F200082BDC /* Extension */,
+				3BC0857328BB995800E00283 /* SettingsView */,
 				3B3FCB7028BB2BA600C258F8 /* NetWorkTools */,
 				3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */,
-				3B3FCB4528BB19DC00C258F8 /* ContentView.swift */,
+				3B3FCB4528BB19DC00C258F8 /* SideBarView.swift */,
 				3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */,
 				3B3FCB4C28BB19DD00C258F8 /* DeviceInfoSyncClient.entitlements */,
 				3B3FCB4928BB19DD00C258F8 /* Preview Content */,
+				3BAD373428BB78890095525B /* Info.plist */,
 			);
 			path = DeviceInfoSyncClient;
 			sourceTree = "<group>";
@@ -148,6 +161,32 @@
 				3B3FCB7128BB2BDD00C258F8 /* UdpTool.swift */,
 			);
 			path = NetWorkTools;
+			sourceTree = "<group>";
+		};
+		3B803B6428BBB8BB00082BDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B803B6528BBB8EF00082BDC /* SettingsWindowController.swift */,
+				3B803B6728BBB98300082BDC /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B803B6928BBB9F200082BDC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B803B6A28BBBA0900082BDC /* AKExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3BC0857328BB995800E00283 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				3B803B6428BBB8BB00082BDC /* Controller */,
+				3BC0857428BB997C00E00283 /* GenericSettings.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		7392DDA1671A7D8CD1999CF1 /* Frameworks */ = {
@@ -274,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC0856F28BB795E00E00283 /* Info.plist in Resources */,
 				3B3FCB4B28BB19DD00C258F8 /* Preview Assets.xcassets in Resources */,
 				3B3FCB4828BB19DD00C258F8 /* Assets.xcassets in Resources */,
 			);
@@ -343,8 +383,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3FCB7228BB2BDD00C258F8 /* UdpTool.swift in Sources */,
-				3B3FCB4628BB19DC00C258F8 /* ContentView.swift in Sources */,
+				3B3FCB4628BB19DC00C258F8 /* SideBarView.swift in Sources */,
+				3BC0857528BB997C00E00283 /* GenericSettings.swift in Sources */,
+				3B803B6B28BBBA0900082BDC /* AKExtension.swift in Sources */,
+				3B803B6628BBB8EF00082BDC /* SettingsWindowController.swift in Sources */,
 				3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */,
+				3B803B6828BBB98300082BDC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +475,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -485,6 +531,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -507,7 +555,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DeviceInfoSyncClient/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceInfoSyncClient/Info.plist;
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -537,7 +589,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DeviceInfoSyncClient/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceInfoSyncClient/Info.plist;
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

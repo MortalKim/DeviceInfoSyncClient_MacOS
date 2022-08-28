@@ -1,16 +1,20 @@
 PODS:
   - ActivityKit (2.2)
+  - HandyJSON (5.0.2)
 
 DEPENDENCIES:
   - ActivityKit
+  - HandyJSON (~> 5.0.2)
 
 SPEC REPOS:
   trunk:
     - ActivityKit
+    - HandyJSON
 
 SPEC CHECKSUMS:
   ActivityKit: 3380a0a8c66cb9888be6f8b199595fd882db251a
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
 
-PODFILE CHECKSUM: 5aed312780d09adad40cc95489f9e65f3f618e3e
+PODFILE CHECKSUM: e701da1929bbdc630df892443345bffda6bb98b7
 
 COCOAPODS: 1.11.3
