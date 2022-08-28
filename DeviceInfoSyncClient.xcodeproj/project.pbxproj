@@ -14,6 +14,9 @@
 		3B3FCB5628BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB5528BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift */; };
 		3B3FCB6028BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB5F28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift */; };
 		3B3FCB6228BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */; };
+		3B3FCB7228BB2BDD00C258F8 /* UdpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB7128BB2BDD00C258F8 /* UdpTool.swift */; };
+		3B3FCB7428BB32F500C258F8 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3FCB7328BB32F500C258F8 /* Network.framework */; };
+		7344A146C4EA342768801193 /* Pods_DeviceInfoSyncClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 		3B3FCB5B28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInfoSyncClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3FCB5F28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientUITests.swift; sourceTree = "<group>"; };
 		3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B3FCB7128BB2BDD00C258F8 /* UdpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpTool.swift; sourceTree = "<group>"; };
+		3B3FCB7328BB32F500C258F8 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/PrivateFrameworks/Network.framework; sourceTree = SDKROOT; };
+		A0F6599C948BA8A5059E845B /* Pods-DeviceInfoSyncClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfoSyncClient.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C35A9D306A37742970ED6B53 /* Pods-DeviceInfoSyncClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfoSyncClient.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient.release.xcconfig"; sourceTree = "<group>"; };
+		FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfoSyncClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7344A146C4EA342768801193 /* Pods_DeviceInfoSyncClient.framework in Frameworks */,
+				3B3FCB7428BB32F500C258F8 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,8 @@
 				3B3FCB5428BB19DD00C258F8 /* DeviceInfoSyncClientTests */,
 				3B3FCB5E28BB19DD00C258F8 /* DeviceInfoSyncClientUITests */,
 				3B3FCB4128BB19DC00C258F8 /* Products */,
+				828B5E6D060024D9625DFCA4 /* Pods */,
+				7392DDA1671A7D8CD1999CF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +107,7 @@
 		3B3FCB4228BB19DC00C258F8 /* DeviceInfoSyncClient */ = {
 			isa = PBXGroup;
 			children = (
+				3B3FCB7028BB2BA600C258F8 /* NetWorkTools */,
 				3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */,
 				3B3FCB4528BB19DC00C258F8 /* ContentView.swift */,
 				3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */,
@@ -129,6 +142,32 @@
 			path = DeviceInfoSyncClientUITests;
 			sourceTree = "<group>";
 		};
+		3B3FCB7028BB2BA600C258F8 /* NetWorkTools */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB7128BB2BDD00C258F8 /* UdpTool.swift */,
+			);
+			path = NetWorkTools;
+			sourceTree = "<group>";
+		};
+		7392DDA1671A7D8CD1999CF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB7328BB32F500C258F8 /* Network.framework */,
+				FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		828B5E6D060024D9625DFCA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0F6599C948BA8A5059E845B /* Pods-DeviceInfoSyncClient.debug.xcconfig */,
+				C35A9D306A37742970ED6B53 /* Pods-DeviceInfoSyncClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B3FCB6528BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClient" */;
 			buildPhases = (
+				4A3EBB01A848FA52646FE07A /* [CP] Check Pods Manifest.lock */,
 				3B3FCB3C28BB19DC00C258F8 /* Sources */,
 				3B3FCB3D28BB19DC00C258F8 /* Frameworks */,
 				3B3FCB3E28BB19DC00C258F8 /* Resources */,
+				7EBC800A0A15D4D5CAC192B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,11 +295,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A3EBB01A848FA52646FE07A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeviceInfoSyncClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EBC800A0A15D4D5CAC192B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B3FCB3C28BB19DC00C258F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3FCB7228BB2BDD00C258F8 /* UdpTool.swift in Sources */,
 				3B3FCB4628BB19DC00C258F8 /* ContentView.swift in Sources */,
 				3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */,
 			);
@@ -412,6 +496,7 @@
 		};
 		3B3FCB6628BB19DD00C258F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F6599C948BA8A5059E845B /* Pods-DeviceInfoSyncClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,11 +517,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
 		3B3FCB6728BB19DD00C258F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35A9D306A37742970ED6B53 /* Pods-DeviceInfoSyncClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +547,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};

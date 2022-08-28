@@ -1,0 +1,16 @@
+PODS:
+  - ActivityKit (2.2)
+
+DEPENDENCIES:
+  - ActivityKit
+
+SPEC REPOS:
+  trunk:
+    - ActivityKit
+
+SPEC CHECKSUMS:
+  ActivityKit: 3380a0a8c66cb9888be6f8b199595fd882db251a
+
+PODFILE CHECKSUM: 5aed312780d09adad40cc95489f9e65f3f618e3e
+
+COCOAPODS: 1.11.3
