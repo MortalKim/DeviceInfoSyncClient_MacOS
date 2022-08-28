@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */; };
+		3B3FCB4628BB19DC00C258F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4528BB19DC00C258F8 /* ContentView.swift */; };
+		3B3FCB4828BB19DD00C258F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */; };
+		3B3FCB4B28BB19DD00C258F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FCB4A28BB19DD00C258F8 /* Preview Assets.xcassets */; };
+		3B3FCB5628BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB5528BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift */; };
+		3B3FCB6028BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB5F28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift */; };
+		3B3FCB6228BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B3FCB5228BB19DD00C258F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B3FCB3828BB19DC00C258F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B3FCB3F28BB19DC00C258F8;
+			remoteInfo = DeviceInfoSyncClient;
+		};
+		3B3FCB5C28BB19DD00C258F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B3FCB3828BB19DC00C258F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B3FCB3F28BB19DC00C258F8;
+			remoteInfo = DeviceInfoSyncClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B3FCB4028BB19DC00C258F8 /* DeviceInfoSyncClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInfoSyncClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientApp.swift; sourceTree = "<group>"; };
+		3B3FCB4528BB19DC00C258F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B3FCB4A28BB19DD00C258F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B3FCB4C28BB19DD00C258F8 /* DeviceInfoSyncClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceInfoSyncClient.entitlements; sourceTree = "<group>"; };
+		3B3FCB5128BB19DD00C258F8 /* DeviceInfoSyncClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInfoSyncClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3FCB5528BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientTests.swift; sourceTree = "<group>"; };
+		3B3FCB5B28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInfoSyncClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3FCB5F28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientUITests.swift; sourceTree = "<group>"; };
+		3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoSyncClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B3FCB3D28BB19DC00C258F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3FCB4E28BB19DD00C258F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3FCB5828BB19DD00C258F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B3FCB3728BB19DC00C258F8 = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB4228BB19DC00C258F8 /* DeviceInfoSyncClient */,
+				3B3FCB5428BB19DD00C258F8 /* DeviceInfoSyncClientTests */,
+				3B3FCB5E28BB19DD00C258F8 /* DeviceInfoSyncClientUITests */,
+				3B3FCB4128BB19DC00C258F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B3FCB4128BB19DC00C258F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB4028BB19DC00C258F8 /* DeviceInfoSyncClient.app */,
+				3B3FCB5128BB19DD00C258F8 /* DeviceInfoSyncClientTests.xctest */,
+				3B3FCB5B28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B3FCB4228BB19DC00C258F8 /* DeviceInfoSyncClient */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB4328BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift */,
+				3B3FCB4528BB19DC00C258F8 /* ContentView.swift */,
+				3B3FCB4728BB19DD00C258F8 /* Assets.xcassets */,
+				3B3FCB4C28BB19DD00C258F8 /* DeviceInfoSyncClient.entitlements */,
+				3B3FCB4928BB19DD00C258F8 /* Preview Content */,
+			);
+			path = DeviceInfoSyncClient;
+			sourceTree = "<group>";
+		};
+		3B3FCB4928BB19DD00C258F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB4A28BB19DD00C258F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B3FCB5428BB19DD00C258F8 /* DeviceInfoSyncClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB5528BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift */,
+			);
+			path = DeviceInfoSyncClientTests;
+			sourceTree = "<group>";
+		};
+		3B3FCB5E28BB19DD00C258F8 /* DeviceInfoSyncClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FCB5F28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift */,
+				3B3FCB6128BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift */,
+			);
+			path = DeviceInfoSyncClientUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B3FCB3F28BB19DC00C258F8 /* DeviceInfoSyncClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3FCB6528BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClient" */;
+			buildPhases = (
+				3B3FCB3C28BB19DC00C258F8 /* Sources */,
+				3B3FCB3D28BB19DC00C258F8 /* Frameworks */,
+				3B3FCB3E28BB19DC00C258F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceInfoSyncClient;
+			productName = DeviceInfoSyncClient;
+			productReference = 3B3FCB4028BB19DC00C258F8 /* DeviceInfoSyncClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B3FCB5028BB19DD00C258F8 /* DeviceInfoSyncClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3FCB6828BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClientTests" */;
+			buildPhases = (
+				3B3FCB4D28BB19DD00C258F8 /* Sources */,
+				3B3FCB4E28BB19DD00C258F8 /* Frameworks */,
+				3B3FCB4F28BB19DD00C258F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3FCB5328BB19DD00C258F8 /* PBXTargetDependency */,
+			);
+			name = DeviceInfoSyncClientTests;
+			productName = DeviceInfoSyncClientTests;
+			productReference = 3B3FCB5128BB19DD00C258F8 /* DeviceInfoSyncClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B3FCB5A28BB19DD00C258F8 /* DeviceInfoSyncClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3FCB6B28BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClientUITests" */;
+			buildPhases = (
+				3B3FCB5728BB19DD00C258F8 /* Sources */,
+				3B3FCB5828BB19DD00C258F8 /* Frameworks */,
+				3B3FCB5928BB19DD00C258F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3FCB5D28BB19DD00C258F8 /* PBXTargetDependency */,
+			);
+			name = DeviceInfoSyncClientUITests;
+			productName = DeviceInfoSyncClientUITests;
+			productReference = 3B3FCB5B28BB19DD00C258F8 /* DeviceInfoSyncClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B3FCB3828BB19DC00C258F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3B3FCB3F28BB19DC00C258F8 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					3B3FCB5028BB19DD00C258F8 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3B3FCB3F28BB19DC00C258F8;
+					};
+					3B3FCB5A28BB19DD00C258F8 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3B3FCB3F28BB19DC00C258F8;
+					};
+				};
+			};
+			buildConfigurationList = 3B3FCB3B28BB19DC00C258F8 /* Build configuration list for PBXProject "DeviceInfoSyncClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B3FCB3728BB19DC00C258F8;
+			productRefGroup = 3B3FCB4128BB19DC00C258F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B3FCB3F28BB19DC00C258F8 /* DeviceInfoSyncClient */,
+				3B3FCB5028BB19DD00C258F8 /* DeviceInfoSyncClientTests */,
+				3B3FCB5A28BB19DD00C258F8 /* DeviceInfoSyncClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B3FCB3E28BB19DC00C258F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3FCB4B28BB19DD00C258F8 /* Preview Assets.xcassets in Resources */,
+				3B3FCB4828BB19DD00C258F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3FCB4F28BB19DD00C258F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3FCB5928BB19DD00C258F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B3FCB3C28BB19DC00C258F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3FCB4628BB19DC00C258F8 /* ContentView.swift in Sources */,
+				3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3FCB4D28BB19DD00C258F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3FCB5628BB19DD00C258F8 /* DeviceInfoSyncClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3FCB5728BB19DD00C258F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3FCB6228BB19DD00C258F8 /* DeviceInfoSyncClientUITestsLaunchTests.swift in Sources */,
+				3B3FCB6028BB19DD00C258F8 /* DeviceInfoSyncClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B3FCB5328BB19DD00C258F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B3FCB3F28BB19DC00C258F8 /* DeviceInfoSyncClient */;
+			targetProxy = 3B3FCB5228BB19DD00C258F8 /* PBXContainerItemProxy */;
+		};
+		3B3FCB5D28BB19DD00C258F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B3FCB3F28BB19DC00C258F8 /* DeviceInfoSyncClient */;
+			targetProxy = 3B3FCB5C28BB19DD00C258F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B3FCB6328BB19DD00C258F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B3FCB6428BB19DD00C258F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3B3FCB6628BB19DD00C258F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeviceInfoSyncClient/DeviceInfoSyncClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeviceInfoSyncClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.DeviceInfoSyncClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B3FCB6728BB19DD00C258F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeviceInfoSyncClient/DeviceInfoSyncClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeviceInfoSyncClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.DeviceInfoSyncClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3B3FCB6928BB19DD00C258F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.DeviceInfoSyncClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeviceInfoSyncClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeviceInfoSyncClient";
+			};
+			name = Debug;
+		};
+		3B3FCB6A28BB19DD00C258F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.DeviceInfoSyncClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeviceInfoSyncClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeviceInfoSyncClient";
+			};
+			name = Release;
+		};
+		3B3FCB6C28BB19DD00C258F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.DeviceInfoSyncClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DeviceInfoSyncClient;
+			};
+			name = Debug;
+		};
+		3B3FCB6D28BB19DD00C258F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.DeviceInfoSyncClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DeviceInfoSyncClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B3FCB3B28BB19DC00C258F8 /* Build configuration list for PBXProject "DeviceInfoSyncClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3FCB6328BB19DD00C258F8 /* Debug */,
+				3B3FCB6428BB19DD00C258F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3FCB6528BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3FCB6628BB19DD00C258F8 /* Debug */,
+				3B3FCB6728BB19DD00C258F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3FCB6828BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3FCB6928BB19DD00C258F8 /* Debug */,
+				3B3FCB6A28BB19DD00C258F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3FCB6B28BB19DD00C258F8 /* Build configuration list for PBXNativeTarget "DeviceInfoSyncClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3FCB6C28BB19DD00C258F8 /* Debug */,
+				3B3FCB6D28BB19DD00C258F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B3FCB3828BB19DC00C258F8 /* Project object */;
+}
