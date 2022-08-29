@@ -17,9 +17,9 @@ class SettingsWindowController<RootView : View>: NSWindowController,NSToolbarDel
         window.setContentSize(NSSize(width: 800, height: 600))
 
         //add a toolbar
-        let toolbar = NSHostingView(rootView: Button("Button title") {
-            print("Button tapped!")
-        })
+        let toolbar = NSHostingView(rootView: Button(action: toggleSidebar, label: {
+            Image(systemName: "sidebar.left")
+        }))
         toolbar.frame.size = toolbar.fittingSize
         let toolbarController = NSTitlebarAccessoryViewController()
         toolbarController.view = toolbar
