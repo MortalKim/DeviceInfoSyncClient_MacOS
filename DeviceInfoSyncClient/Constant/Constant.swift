@@ -9,4 +9,5 @@ import Foundation
 
 public class Constant{
     public static let TO_UDP = "ToUDP"
+    public static let TEST_INFO = "Is any one here?"
 }

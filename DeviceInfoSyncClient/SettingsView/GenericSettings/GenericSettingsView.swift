@@ -9,22 +9,35 @@ import SwiftUI
 
 struct GenericSettingsView: View {
     @ObservedObject var viewModel:GenericSettingsViewModel// = GenericSettingsViewModel()
+    @State var details: AlertDetails?
+    
     var body: some View {
         VStack {
-            
-            TextField(
-                "Ip",
-                text: $viewModel.username
-            )
+            HStack {
+                Text("Ip")
+                TextField(
+                    "Ip",
+                    text: $viewModel.ip
+                )
+                .frame(width: 100)
+                Stepper(value: $viewModel.port, in: 0...65535) {
+                            EmptyView()
+                }
+            }
             .padding(10)
             .frame(height: 50)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             
-            TextField(
-                "Port",
-                text: $viewModel.username
-            )
+            
+            HStack {
+                    Text("Port")
+                    TextField("", value: $viewModel.port, formatter: NumberFormatter())
+                        .frame(width: 100)
+                    Stepper(value: $viewModel.port, in: 0...65535) {
+                                EmptyView()
+                    }
+            }
             .padding(10)
             .frame(height: 50)
             .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -42,9 +55,15 @@ struct GenericSettingsView: View {
                 }
             }
         }
-        
-        
+        .alert(
+            self.viewModel.alertTitle, isPresented: self.$viewModel.alertShow, presenting: viewModel.alertMsg
+        ) { detail in
+            //body
+        } message: { detail in
+            Text(detail)
+        }
     }
+    
     init() {
         self.viewModel = GenericSettingsViewModel()
     }
@@ -55,4 +74,10 @@ struct GenericSettings_Previews: PreviewProvider {
     static var previews: some View {
         GenericSettingsView()
     }
+}
+
+
+
+struct AlertDetails {
+    let error: String
 }

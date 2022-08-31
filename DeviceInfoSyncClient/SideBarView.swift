@@ -40,7 +40,6 @@ struct SideBarView: View {
             .navigationTitle("Explore")
             //Set Sidebar Width (and height)
             .frame(minWidth: 150, idealWidth: 250, maxWidth: 800)
-
 //            .toolbar{
 //                //Toggle Sidebar Button
 //                ToolbarItem(placement: .navigation){

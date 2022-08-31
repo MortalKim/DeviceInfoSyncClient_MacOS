@@ -19,6 +19,7 @@
 		3B803B6628BBB8EF00082BDC /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6528BBB8EF00082BDC /* SettingsWindowController.swift */; };
 		3B803B6828BBB98300082BDC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6728BBB98300082BDC /* SettingsViewController.swift */; };
 		3B803B6B28BBBA0900082BDC /* AKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6A28BBBA0900082BDC /* AKExtension.swift */; };
+		3BACDA3028BFA0A3001332F5 /* NotificationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BACDA2F28BFA0A3001332F5 /* NotificationEvent.swift */; };
 		3BC0856F28BB795E00E00283 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BAD373428BB78890095525B /* Info.plist */; };
 		3BC0857528BB997C00E00283 /* GenericSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0857428BB997C00E00283 /* GenericSettingsView.swift */; };
 		3BD8E5EC28BF61F6006F596A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8E5EB28BF61F6006F596A /* Constant.swift */; };
@@ -60,6 +61,7 @@
 		3B803B6528BBB8EF00082BDC /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
 		3B803B6728BBB98300082BDC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B803B6A28BBBA0900082BDC /* AKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKExtension.swift; sourceTree = "<group>"; };
+		3BACDA2F28BFA0A3001332F5 /* NotificationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEvent.swift; sourceTree = "<group>"; };
 		3BAD373428BB78890095525B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC0857428BB997C00E00283 /* GenericSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSettingsView.swift; sourceTree = "<group>"; };
 		3BD8E5EB28BF61F6006F596A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				3BD8E5EB28BF61F6006F596A /* Constant.swift */,
+				3BACDA2F28BFA0A3001332F5 /* NotificationEvent.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				3BD8E5EC28BF61F6006F596A /* Constant.swift in Sources */,
 				3BC0857528BB997C00E00283 /* GenericSettingsView.swift in Sources */,
 				3BDEEB8F28BD0C0B007BDA2E /* GenericSettingsViewModel.swift in Sources */,
+				3BACDA3028BFA0A3001332F5 /* NotificationEvent.swift in Sources */,
 				3B803B6B28BBBA0900082BDC /* AKExtension.swift in Sources */,
 				3B803B6628BBB8EF00082BDC /* SettingsWindowController.swift in Sources */,
 				3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */,
