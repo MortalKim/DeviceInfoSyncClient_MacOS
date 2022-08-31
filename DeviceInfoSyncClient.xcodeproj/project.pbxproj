@@ -20,7 +20,9 @@
 		3B803B6828BBB98300082BDC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6728BBB98300082BDC /* SettingsViewController.swift */; };
 		3B803B6B28BBBA0900082BDC /* AKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B803B6A28BBBA0900082BDC /* AKExtension.swift */; };
 		3BC0856F28BB795E00E00283 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BAD373428BB78890095525B /* Info.plist */; };
-		3BC0857528BB997C00E00283 /* GenericSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0857428BB997C00E00283 /* GenericSettings.swift */; };
+		3BC0857528BB997C00E00283 /* GenericSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0857428BB997C00E00283 /* GenericSettingsView.swift */; };
+		3BD8E5EC28BF61F6006F596A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8E5EB28BF61F6006F596A /* Constant.swift */; };
+		3BDEEB8F28BD0C0B007BDA2E /* GenericSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDEEB8E28BD0C0B007BDA2E /* GenericSettingsViewModel.swift */; };
 		7344A146C4EA342768801193 /* Pods_DeviceInfoSyncClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +61,9 @@
 		3B803B6728BBB98300082BDC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B803B6A28BBBA0900082BDC /* AKExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKExtension.swift; sourceTree = "<group>"; };
 		3BAD373428BB78890095525B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BC0857428BB997C00E00283 /* GenericSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSettings.swift; sourceTree = "<group>"; };
+		3BC0857428BB997C00E00283 /* GenericSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSettingsView.swift; sourceTree = "<group>"; };
+		3BD8E5EB28BF61F6006F596A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3BDEEB8E28BD0C0B007BDA2E /* GenericSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSettingsViewModel.swift; sourceTree = "<group>"; };
 		A0F6599C948BA8A5059E845B /* Pods-DeviceInfoSyncClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfoSyncClient.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A9D306A37742970ED6B53 /* Pods-DeviceInfoSyncClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfoSyncClient.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfoSyncClient/Pods-DeviceInfoSyncClient.release.xcconfig"; sourceTree = "<group>"; };
 		FF81D6555AE0D4A2E53DF9B3 /* Pods_DeviceInfoSyncClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfoSyncClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 		3B3FCB4228BB19DC00C258F8 /* DeviceInfoSyncClient */ = {
 			isa = PBXGroup;
 			children = (
+				3BD8E5EA28BF61E5006F596A /* Constant */,
 				3B803B6928BBB9F200082BDC /* Extension */,
 				3BC0857328BB995800E00283 /* SettingsView */,
 				3B3FCB7028BB2BA600C258F8 /* NetWorkTools */,
@@ -183,10 +188,27 @@
 		3BC0857328BB995800E00283 /* SettingsView */ = {
 			isa = PBXGroup;
 			children = (
+				3BDEEB8C28BD0BC2007BDA2E /* GenericSettings */,
 				3B803B6428BBB8BB00082BDC /* Controller */,
-				3BC0857428BB997C00E00283 /* GenericSettings.swift */,
 			);
 			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		3BD8E5EA28BF61E5006F596A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8E5EB28BF61F6006F596A /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		3BDEEB8C28BD0BC2007BDA2E /* GenericSettings */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0857428BB997C00E00283 /* GenericSettingsView.swift */,
+				3BDEEB8E28BD0C0B007BDA2E /* GenericSettingsViewModel.swift */,
+			);
+			path = GenericSettings;
 			sourceTree = "<group>";
 		};
 		7392DDA1671A7D8CD1999CF1 /* Frameworks */ = {
@@ -384,7 +406,9 @@
 			files = (
 				3B3FCB7228BB2BDD00C258F8 /* UdpTool.swift in Sources */,
 				3B3FCB4628BB19DC00C258F8 /* SideBarView.swift in Sources */,
-				3BC0857528BB997C00E00283 /* GenericSettings.swift in Sources */,
+				3BD8E5EC28BF61F6006F596A /* Constant.swift in Sources */,
+				3BC0857528BB997C00E00283 /* GenericSettingsView.swift in Sources */,
+				3BDEEB8F28BD0C0B007BDA2E /* GenericSettingsViewModel.swift in Sources */,
 				3B803B6B28BBBA0900082BDC /* AKExtension.swift in Sources */,
 				3B803B6628BBB8EF00082BDC /* SettingsWindowController.swift in Sources */,
 				3B3FCB4428BB19DC00C258F8 /* DeviceInfoSyncClientApp.swift in Sources */,

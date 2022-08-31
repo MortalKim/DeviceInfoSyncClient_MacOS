@@ -21,7 +21,7 @@ struct SideBarView: View {
                 //Navigation links
                 //Replace "ContentView" with your destination
                 Group{
-                    NavigationLink(destination: GenericSettings(),tag: 0,selection:$selection) {
+                    NavigationLink(destination: GenericSettingsView(),tag: 0,selection:$selection) {
                         Label("Settings", systemImage: "gear")
                     }
 

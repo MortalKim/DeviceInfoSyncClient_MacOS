@@ -48,4 +48,8 @@ class UdpTool{
                 }
             }))
     }
+    
+    public func close(){
+        connection.cancel()
+    }
 }
