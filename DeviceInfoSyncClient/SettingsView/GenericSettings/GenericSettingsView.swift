@@ -59,6 +59,10 @@ struct GenericSettingsView: View {
             self.viewModel.alertTitle, isPresented: self.$viewModel.alertShow, presenting: viewModel.alertMsg
         ) { detail in
             //body
+            Button(self.viewModel.alertButtonText) {
+                // handle retry action.
+                viewModel.alertButtonClick()
+            }
         } message: { detail in
             Text(detail)
         }
