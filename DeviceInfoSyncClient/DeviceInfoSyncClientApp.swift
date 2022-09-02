@@ -12,7 +12,7 @@ import AppKit
 @main
 struct DeviceInfoSyncClientApp: App {
     public static var instance :DeviceInfoSyncClientApp?
-    
+    let observer = ActivityObserver()
     private var timer: Timer?
     @State var currentNumber: String = "1"
     @State var udpTool:UdpTool?
@@ -57,7 +57,6 @@ struct DeviceInfoSyncClientApp: App {
     
     init(){
         initUdp()
-        let observer = ActivityObserver()
         observer.updatedStatisticsHandler = {[self] observer in
             //todo: update info on UI
             Swift.print(observer.toJSON())
@@ -65,12 +64,7 @@ struct DeviceInfoSyncClientApp: App {
                 self.udpTool?.sendUDP(msg:observer.statistics)
             }
         }
-
-        let interval = 3.0
-        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
-            observer.update(interval: interval)
-        })
-        RunLoop.main.add(timer!, forMode: RunLoop.Mode.common)
+        observer.start(interval: 3)
         
         DeviceInfoSyncClientApp.instance = self
     }
