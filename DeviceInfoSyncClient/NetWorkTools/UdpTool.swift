@@ -13,6 +13,7 @@ class UdpTool{
     let port:NWEndpoint.Port
     let selfPort:NWEndpoint.Port
     var connection:NWConnection
+    var isCanceled = false
     init(ip:String, port:String) {
         self.ip = NWEndpoint.Host(ip)
         self.port = NWEndpoint.Port(port)!
@@ -32,6 +33,7 @@ class UdpTool{
     }
     
     public func connect(){
+        isCanceled = false
         connection.stateUpdateHandler = { (newState) in
             print("This is stateUpdateHandler:")
             switch (newState) {
@@ -67,7 +69,10 @@ class UdpTool{
     }
     
     public func close(){
-        connection.cancel()
+        
+        self.connection.stateUpdateHandler = nil
+        self.connection.cancel()
+        isCanceled = true
     }
     
     public static func validateIpAddress(ipToValidate: String) -> Bool {

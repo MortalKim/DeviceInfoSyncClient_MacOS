@@ -15,12 +15,20 @@ struct DeviceInfoSyncClientApp: App {
     let observer = ActivityObserver()
     private var timer: Timer?
     @State var currentNumber: String = "1"
-    @State var udpTool:UdpTool?
+    var udpTool:UdpTool?
     
     @State var window:SettingsWindowController<SideBarView>?
-    @State public var ToUDP = UserDefaults.standard.bool(forKey: Constant.TO_UDP){
-        didSet{
+    public var ToUDP = UserDefaults.standard.bool(forKey: Constant.TO_UDP){
+        willSet{
+            print("New value is \(newValue) and old is \(ToUDP)")
+            UserDefaults.standard.set(newValue, forKey: Constant.TO_UDP)
+            UserDefaults.standard.synchronize()
+
+        }
+        didSet(oldValue){
+            Swift.print("new udp value: \(oldValue) to " + String(ToUDP))
             initUdp()
+            activityObserver()
         }
     }
     
@@ -57,26 +65,37 @@ struct DeviceInfoSyncClientApp: App {
     
     init(){
         initUdp()
-        observer.updatedStatisticsHandler = {[self] observer in
-            //todo: update info on UI
-            Swift.print(observer.toJSON())
-            if(ToUDP){
-                self.udpTool?.sendUDP(msg:observer.statistics)
-            }
-        }
-        observer.start(interval: 3)
-        
+        activityObserver()
         DeviceInfoSyncClientApp.instance = self
     }
     
-    public func initUdp(){
+    public mutating func activityObserver(){
+        observer.stop()
+        observer.updatedStatisticsHandler = nil
+        observer.updatedStatisticsHandler = {[self] observer in
+            //todo: update info on UI
+            var jsonData = observer.toJSON()!
+            Swift.print(jsonData)
+            if(ToUDP){
+                self.udpTool?.sendUDP(msg:jsonData)
+            }
+        }
+        observer.start(interval: 3)
+    }
+    
+    public mutating func initUdp(){
         if(ToUDP){
             //init udp.
             //todo: Need change in settings
-            udpTool = UdpTool(ip:"127.0.0.1",port:"8888")
+            udpTool?.close()
+            var ip: String = UserDefaults.standard.string(forKey: Constant.REMOTE_IP) ?? ""
+            var port: Int = UserDefaults.standard.integer(forKey: Constant.REMOTE_PORT)
+            udpTool = UdpTool(ip:ip,port:String(port))
             udpTool?.connect()
+            Swift.print("Start connection")
         }
         else{
+            Swift.print("Close connection")
             udpTool?.close()
         }
     }

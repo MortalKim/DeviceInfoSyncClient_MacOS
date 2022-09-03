@@ -9,10 +9,19 @@ import SwiftUI
 
 struct GenericSettingsView: View {
     @ObservedObject var viewModel:GenericSettingsViewModel// = GenericSettingsViewModel()
-    @State var details: AlertDetails?
-    
+
     var body: some View {
         VStack {
+            HStack{
+                Image(systemName: viewModel.checked ? "checkmark.square.fill" : "square")
+                    .foregroundColor(viewModel.checked ? Color.blue : Color.secondary)
+                            .onTapGesture {
+                                viewModel.toggleTransmission()
+                            }
+                Text("Enable data transmission")
+            }
+           
+            
             HStack {
                 Text("Ip")
                 TextField(
@@ -50,7 +59,7 @@ struct GenericSettingsView: View {
                     Text("Test Connection")
                 }
                 
-                Button(action: viewModel.testConnection) {
+                Button(action: viewModel.confirmIpConfig) {
                     Text("Confirm")
                 }
             }

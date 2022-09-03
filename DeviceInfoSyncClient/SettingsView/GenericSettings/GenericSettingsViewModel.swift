@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 
 class GenericSettingsViewModel:ObservableObject{
-    @Published public var ip: String = ""
-    @Published public var port: Int = 0
-    
-    //alert
+    @Published public var ip: String = UserDefaults.standard.string(forKey: Constant.REMOTE_IP) ?? ""
+    @Published public var port: Int = UserDefaults.standard.integer(forKey: Constant.REMOTE_PORT)    //alert
     @Published public var alertShow = false
     @Published public var alertTitle: String = ""
     @Published public var alertMsg: String = ""
     @Published public var alertButtonText: String = ""
+    
+    @Published var checked: Bool = UserDefaults.standard.bool(forKey: Constant.TO_UDP)
     
     private var udpTool:UdpTool?
     
@@ -49,7 +49,8 @@ class GenericSettingsViewModel:ObservableObject{
             //wait for 5 second
             DispatchQueue.global(qos: .userInitiated).async() {
                 Thread.sleep(forTimeInterval: 5)
-                if(!haveResponse){
+                //if not response and wait dialog is showing,
+                if(!haveResponse && self.alertShow){
                     self.dismissAlert()
                     self.showAlert(newAlertTitle: "Timeout", newAlertMsg: "Target is timeout.", buttonText: "OK")
                 }
@@ -58,6 +59,24 @@ class GenericSettingsViewModel:ObservableObject{
         else{
             showAlert(newAlertTitle: "IP Error", newAlertMsg: "Not a real Ip",buttonText: "OK")
         }
+    }
+    
+    public func confirmIpConfig(){
+        if(UdpTool.validateIpAddress(ipToValidate: ip)){
+            UserDefaults.standard.set(ip, forKey: Constant.REMOTE_IP)
+            UserDefaults.standard.set(port, forKey: Constant.REMOTE_PORT)
+        }
+        else{
+            showAlert(newAlertTitle: "IP Error", newAlertMsg: "Not a real Ip",buttonText: "OK")
+        }
+        
+    }
+    
+    public func toggleTransmission(){
+        checked.toggle()
+        Swift.print("Tansmission will set to \(checked)")
+        DeviceInfoSyncClientApp.instance!.ToUDP = checked
+        Swift.print("ToUDP set to \(DeviceInfoSyncClientApp.instance!.ToUDP)")
     }
 
     func showAlert(newAlertTitle:String, newAlertMsg:String, buttonText:String) {
